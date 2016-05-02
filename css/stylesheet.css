@@ -6,7 +6,23 @@
 
 
 body{
-margin: 10%;
+margin: 1%;
 border: 0px;
+}
 
+nav{
+border: solid 1px;
+height: 70px;
+}
+
+.barfondo{
+  background-color: ;
+}
+
+.brand{
+  border:solid 1px;
+  height: 70px;
+  width: 70px;
+  float: left;
+  background-color: black;
 }
