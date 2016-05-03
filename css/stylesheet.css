@@ -1,28 +1,66 @@
 *{
   margin: 0px;
-  padding: 0px;
-  border: 0px;
-}
+  }
 
 
 body{
-margin: 1%;
-border: 0px;
+
+
 }
 
-nav{
+div {
+
+}
+
+.header {
+  position: fixed;
+overflow: hidden;
+border: 1px solid;
+height: auto;
+width: 100%;
+background: url(http://sandramargarita.com/wp-content/uploads/2015/12/HDR-C--1200x200.jpg);
+z-index: 1;
+background-repeat: no-repeat;
+min-height: 12rem;
+background-size: cover;
+}
+
+
+ #logo img{
+  position: fixed;
+   max-width: 10rem;
+   left: 7rem;
+   top: 3rem;
+ }
+
+span a{
+  position: fixed;
+left: 5rem;
+text-decoration: none;
+color: black;
+font-size: 35px;
+font-family: sans-serif;
+text-shadow:
+  -1px -1px 0 #000,
+   1px -1px 0 #000,
+  -1px 1px 0 #fff,
+   1px 1px 0 #fff;
+
+}
+*/
+/*nav{
 border: solid 1px;
-height: 70px;
+
 }
 
 .barfondo{
-  background-color: ;
+  background-color:green ;
 }
 
-.brand{
-  border:solid 1px;
-  height: 70px;
-  width: 70px;
-  float: left;
-  background-color: black;
+
 }
+
+a li{
+  display: inline;
+}
+*/
