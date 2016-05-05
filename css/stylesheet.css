@@ -1,17 +1,14 @@
 *{
   margin: 0px;
+
   }
 
-body{
-
-}
 
 .header {
-  position: fixed;
+  position: relative;
   overflow: hidden;
-  border: 1px solid;
   height: auto;
-  width: 100%;
+  width: auto;
   background: url("../img/header.jpg") center top no-repeat;
   z-index: 1;
   background-repeat: no-repeat;
@@ -20,9 +17,9 @@ body{
 }
 
  #logo img{
-   position: fixed;
+   position: relative;
    top:70px;
-   left: 1rem;
+   left: -5rem;
    height: 10rem;
    width: 25%;
    min-width: 355px;
@@ -37,7 +34,7 @@ body{
 }
 
  a{
-    position: fixed;
+    position: relative;
     left: 5rem;
     text-decoration: none;
     color: black;
@@ -53,7 +50,6 @@ body{
 
 nav{
     position: relative;
-    top:12rem;
     min-height: 4rem;
     height: auto;
     width: 100%;
@@ -120,13 +116,20 @@ div#MainMenu a:hover {
 ul{
   list-style: none;
 }
+a#BtnModal.togglenav {
+  top:20rem;
+}
+
+a#BtnCerrar{
+  top:20rem;
+}
 
 @media screen and (max-width:800px ){
 a#BtnModal.togglenav {
       position: relative;
       z-index: 4;
       left:1rem;
-      top: 9rem;
+      top: -3rem;
       font-size: 26px;
       background-color: white;
       border: white;
@@ -142,4 +145,21 @@ a#BtnCerrar{
   top: 16.1rem;
 }
 
+}
+
+div#fondo{
+  position: relative;
+  height: 50rem;
+  width: 100%;
+  z-index: 0;
+  background-color:violet;
+  top:-3rem;
+}
+
+.caret-down:after {
+  content: '\25bc';
+}
+
+.caret-up:after {
+  content: '\25b2';
 }
