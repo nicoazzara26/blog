@@ -2,12 +2,9 @@
   margin: 0px;
   }
 
-
 body{
 
 }
-
-
 
 .header {
   position: fixed;
@@ -21,7 +18,6 @@ body{
   min-height: 12rem;
   background-size: cover;
 }
-
 
  #logo img{
    position: fixed;
@@ -74,8 +70,6 @@ nav{
   }
 }
 
-
-
 #logo > a {
   text-decoration: none;
   }
@@ -114,7 +108,7 @@ button.togglenav {
       position: relative;
       z-index: 4;
       top: 8rem;
-      font-size: 30px;
+      font-size: 26px;
       background-color: white;
       border: white;
       padding-top: 16px;
@@ -122,7 +116,23 @@ button.togglenav {
 }
 }
 
-
 button.togglenav:hover{
       color: brown;
+}
+
+#Modal-Menu{
+display: none;
+position: fixed;
+z-index: 5;
+width: 100%;
+height: 100%;
+background-color: red;
+}
+
+ul.Modal-Content{
+  list-style: none;
+}
+
+ul.Modal-Content li a{
+
 }
