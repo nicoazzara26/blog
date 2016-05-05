@@ -1,20 +1,14 @@
-window.onload=function() {
-  document.getElementById('Modal-Menu').onclick = function () {
-    alert('hola');
-  }
-}
+var menu;
+var btnCerrar;
 
-var modal = document.getElementById('Modal-Menu');
+window.onload = function() {
 
-var btn = document.getElementById('BtnModal');
+menu = document.getElementById('MainMenu');
+btnCerrar = document.getElementById('BtnCerrar')
+ }
 
-btn.onclick = function abrirmodal() {
- alert
-  modal.style.display = "block";
-}
-
-window.onclick = function cerrarmodal(event) {
-  if(event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+  function cambiarEstilo(propiedad, valor) {
+                                  menu.style[propiedad] = valor;
+                                  BtnCerrar.style[propiedad] = valor;
+                              }
+      

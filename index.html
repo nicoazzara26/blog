@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/stylesheet.css" >
   <title>Blog</title>
- <script type="text/javascript" src="../js/script.js"></script>
+ <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 
@@ -13,7 +13,7 @@
     <div id="logo">
       <a class="title" href="#">
       <img src="img/Logo_Cuello-de-botella.png" alt="" />
-                  Wine Blog
+
           </a>
         </div>
       </div>
@@ -22,10 +22,9 @@
      <nav>
        <div class="barfondo">
          <div id="MainMenu">
-           <ul>
+            <ul>
               <li><a class="Menu-item" href="#">Home</a></li>
               <li><a class="Menu-item" href="#">About</a></li>
-              <li><a class="Menu-item" href="#">Books</a></li>
               <li><a class="Menu-item" href="#">Resources</a></li>
               <li><a class="Menu-item" href="#">Regions</a></li>
               <li><a class="Menu-item" href="#">Contact</a></li>
@@ -34,26 +33,16 @@
       </div>
     </nav>
 
-      <button id="BtnModal" class="togglenav">▼ Menu
-        <div id="Modal-Menu" class="Modal">
-          <ul class="Modal-Content">
-             <li><a class="Menu-item" href="#">Home</a></li>
-             <li><a class="Menu-item" href="#">About</a></li>
-             <li><a class="Menu-item" href="#">Books</a></li>
-              <li><a class="Menu-item" href="#">Resources</a></li>
-              <li><a class="Menu-item" href="#">Regions</a></li>
-              <li><a class="Menu-item" href="#">Contact</a></li>
-         </ul>
-       </div>
-    </button>
+    <a id="BtnModal" class="togglenav" href="javascript:cambiarEstilo('display', 'block')">▼ Menu</a>
+    <a id="BtnCerrar" href="javascript:cambiarEstilo('display', 'none')">X</a>
 
-  <div class="fondo">
+  <div id="fondo">
   </div>
 
-  <div class="principal">
+  <div id="principal">
   </div>
 
-  <div class="footer">
+  <div id="footer">
   </div>
 
 </body>
