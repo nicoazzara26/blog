@@ -1,8 +1,10 @@
+
+/*header*/
+
 *{
   margin: 0px;
 
   }
-
 
 .header {
   position: relative;
@@ -33,11 +35,13 @@
     left: 5.2rem;
 }
 
+/*navegacion*/
+
  a{
     position: relative;
     left: 5rem;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 35px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     text-shadow:
@@ -45,21 +49,18 @@
          1px -1px 0 #fff,
         -1px 1px 0 #fff,
          1px 1px 0 #fff;
-
 }
 
 nav{
     position: relative;
-    min-height: 4rem;
-    height: 1rem;
+    min-height: 3rem;
+    height: 3rem;
     width: 100%;
     z-index: 3;
-    -webkit-box-shadow: -6px 3px 36px -1px rgba(0,0,0,0.4);
-    -moz-box-shadow: -6px 3px 36px -1px rgba(0,0,0,0.4);
-    box-shadow: -6px 3px 36px -1px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 18px 24px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 18px 24px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 18px 24px -2px rgba(0,0,0,0.75);
   }
-
-
 
 @media screen and (max-width:800px){
   #MainMenu{
@@ -67,29 +68,27 @@ nav{
     position: relative;
     width: 12rem;
     background-color: black;
-
-
   }
-
 
   #MainMenu a {
 
     color:white
   }
-
 }
 
 #logo > a {
   text-decoration: none;
   }
 
-div#MainMenu{
-  padding-top: 30px;
-  padding-bottom: 20px;
+a.Menu-item {
+left:-10px;
 }
 
-div#MainMenu li {
-display: inline;
+div#MainMenu{
+  background-color: black;
+  -webkit-box-shadow: 10px 10px 19px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 19px -2px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 19px -2px rgba(0,0,0,0.75);
 
 }
 
@@ -101,7 +100,6 @@ div#MainMenu a {
   font-weight: bold;
   text-shadow: none;
   font-family: sans-serif;
-  padding: 0px 20px;
 }
 
 div#MainMenu a:hover {
@@ -110,22 +108,6 @@ div#MainMenu a:hover {
 
 ul{
   list-style: none;
-}
-
-div#fondo{
-  position: relative;
-  height: 50rem;
-  width: 100%;
-  z-index: 0;
-  background-color:violet;
-}
-
-.caret-down:after {
-  content: '\25bc';
-}
-
-.caret-up:after {
-  content: '\25b2';
 }
 
 .dropbtn {
@@ -139,7 +121,8 @@ div#fondo{
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: block;
+    width: 100px;
 }
 
 .dropdown-content {
@@ -147,17 +130,22 @@ div#fondo{
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 62px;
+    left: 92px;
+    top: 0px;
+    width: 0px;
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -165,4 +153,126 @@ div#fondo{
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+/*social*/
+
+.dropdown-social {
+    position: relative;
+    float: right;
+    height: 0px;
+    width: 4rem;
+}
+
+.social-Content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    height: 62px;
+    left: -36rem;
+    top: 0px;
+    width: 0px;
+}
+
+.dropdown-social:hover .social-Content {
+    display:flex;
+}
+
+a.wine{
+padding-left: 1rem;
+display: inline;
+position: relative;
+float: right;
+left: -4rem;
+top: -3.2rem;
+cursor: pointer;
+}
+
+
+a.facebook, a.twitter, a.instagram, a.mail, a.youtube, a.gplus, a.like{
+
+  padding-left: 1rem;
+  float:right;
+  left: 4rem;
+  top: -3.2rem;
+}
+
+
+img{
+  height: 3rem;
+}
+
+@media screen and (min-width:580px) and (max-width:680px){
+  .dropdown-social {
+    display: block;
+    top: 50rem;
+  }
+  a.wine{
+    left: -0.5rem;
+  }
+
+  .social-Content {
+    left: -32rem;
+  }
+
+}
+
+@media screen and (min-width:300px) and (max-width:580px){
+  .dropdown-social {
+    display: block;
+    top: 50rem;
+    left: -1rem;
+  }
+
+  a.wine{
+    left: -0.5rem;
+    display: block;
+    position: relative;
+    float: left;
+    cursor: pointer;
+  }
+
+  .dropdown-social:hover .social-Content {
+      display:block;
+      left: -14rem;
+  }
+
+  a.like{
+    top:-10rem;
+    left: 7.5rem;
+  }
+
+  a.youtube{
+    top:-6.7rem;
+    left: -3.7rem;
+  }
+  a.gplus{
+    top:-10rem;
+    left: 0.2rem;
+  }
+
+
+}
+/*contenido*/
+
+div#fondo{
+  position: relative;
+  height: 55rem;
+  width: 100%;
+  z-index: 0;
+  background-color:#4d0026;
+}
+
+div#principal{
+  display: block;
+  position: relative;
+  background-color: white;
+  z-index: 6;
+  width: 90%;
+  height: 80%;
+  top: 4%;
+  left: 5%;
+  -webkit-box-shadow: -2px 18px 19px 12px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 18px 19px 12px rgba(0,0,0,0.75);
+box-shadow: -2px 18px 19px 12px rgba(0,0,0,0.75);
 }
