@@ -6,6 +6,14 @@
 
   }
 
+html, body{
+height: 100%;
+}
+
+body{
+    background-color:#4d0026;
+}
+
 .header {
   position: relative;
   overflow: hidden;
@@ -51,10 +59,10 @@
 }
 
 nav{
+    background-color: white;
     position: relative;
     min-height: 3rem;
     height: 3rem;
-    width: 100%;
     z-index: 3;
     -webkit-box-shadow: 0px 18px 24px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 18px 24px -2px rgba(0,0,0,0.75);
@@ -86,8 +94,8 @@ left:-10px;
 div#MainMenu{
   background-color: black;
   -webkit-box-shadow: 10px 10px 19px -2px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 19px -2px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 19px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 19px -2px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 19px -2px rgba(0,0,0,0.75);
 
 }
 
@@ -255,25 +263,16 @@ img{
 
 }
 
-/*contenedores principales*/
 
-div#fondo{
-  position: relative;
-  height: 55rem;
-  width: 100%;
-  z-index: 0;
-  background-color:#4d0026;
-}
-
-div#principal{
+.principal{
   display: block;
   position: relative;
   background-color: white;
-  z-index: 6;
+  z-index: 9;
   width: 90%;
-  height: 80%;
   top: 4%;
   left: 5%;
+  height: auto;
   -webkit-box-shadow: -2px 18px 19px 12px rgba(0,0,0,0.75);
 -moz-box-shadow: -2px 18px 19px 12px rgba(0,0,0,0.75);
 box-shadow: -2px 18px 19px 12px rgba(0,0,0,0.75);
@@ -285,8 +284,8 @@ box-shadow: -2px 18px 19px 12px rgba(0,0,0,0.75);
     position: relative;
     display: block;
     z-index: 7;
-    width: 85%;
-    height: 25%;
+    width: 95%;
+    height: auto;
     left: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
@@ -299,10 +298,36 @@ box-shadow: -2px 18px 19px 12px rgba(0,0,0,0.75);
     padding-bottom: 1rem;
     font-family: "arial", Helvetica, sans-serif;
     text-decoration: none;
+    margin-top: 4%;
 }
 
 .principal-container p, .principal-container p a{
   color:black;
   font-family: "arial", Helvetica, sans-serif;
   text-decoration: none;
+}
+
+.col1
+{
+  text-align: center;
+  float: left;
+  width: 30%;
+}
+
+.col2
+{
+  text-align: center;
+  float: left;
+  margin-left: 5%;
+  max-resolution: 2%;
+  width: 30%;
+}
+
+.col3
+{
+  text-align: center;
+  float: right;
+  margin-left: 5%;
+  max-resolution: 2%;
+  width: 30%;
 }
