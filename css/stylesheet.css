@@ -213,7 +213,7 @@ img{
 @media screen and (min-width:580px) and (max-width:680px){
   .dropdown-social {
     display: block;
-    top: 50rem;
+    top: 84rem;
   }
   a.wine{
     left: -0.5rem;
@@ -228,7 +228,7 @@ img{
 @media screen and (min-width:300px) and (max-width:580px){
   .dropdown-social {
     display: block;
-    top: 50rem;
+    top: 84rem;
     left: -1rem;
   }
 
