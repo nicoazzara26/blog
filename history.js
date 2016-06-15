@@ -21,9 +21,11 @@ function cambiar(pagina){
 
 mostrar(pagina);
 
-window.history.pushState(pagina, null, 'pagina'+pagina+'.html');
+window.history.pushState(pagina,null,'pagina'+pagina+'.html');
 
-} function nuevaurl(e){
+}
+
+ function nuevaurl(e){
 
 mostrar(e.state);
 }
