@@ -312,7 +312,7 @@ max-width: 80rem;
   .principal-container{
       position: relative;
       display: block;
-      left:-4rem;
+
       width: 95%;
       height: 84rem;
 
@@ -325,7 +325,6 @@ max-width: 80rem;
         display: block;
         width: 95%;
         height: 53rem;
-        left: -4rem;
 
     }
     }
@@ -334,13 +333,12 @@ max-width: 80rem;
 {
   text-align: center;
   float: left;
-  width: 30%;
-  float: left;
-   margin: 5px;
-   padding: 15px;
-   width: 300px;
-   height: 23rem;
-  padding-left: 5rem;
+  margin: 5px;
+  padding-left: 3px;
+  padding-top: 48px;
+  width: 278px;
+  height: 23rem;
+
 }
 
 .footer{
